@@ -18,15 +18,11 @@ while (true) {
     continue;
   }
   if (input !== null && isValid === false) {
-  console.log(total);
   total = Number.parseInt(total) + inputNumber;
-  console.log(inputNumber);
  }
   if (input === null) {
     inputNumber = 0;
     total = Number.parseInt(total) + inputNumber;
-    console.log(inputNumber);
-    console.log(total);
     alert(`Общая сумма чисел равна ${total}`);
     break;
   }
