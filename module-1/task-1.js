@@ -5,8 +5,7 @@ Task 1
 
 const name = 'Генератор защитного поля';
 let price = 1000;
-let message = `Выбран «${name}», цена за штуку ${price} кредитов`;
-console.log(message);
-price = 2000;
-let messageNewPrice = `Выбран «${name}», цена за штуку ${price} кредитов`;
-console.log(messageNewPrice);
+
+console.log('Выбран «', name,' цена за штуку ', price ,' кредитов');
+
+console.log('Выбран «', name,' цена за штуку ', price + 1000 ,' кредитов');
