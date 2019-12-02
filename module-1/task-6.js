@@ -7,22 +7,17 @@ let total = 0;
 let input;
 
 while (true) {
-    input = prompt(
-    'Введите число',
-  );
-  let inputNumber = Number.parseInt(input) * 1;
-  let inputVerify = Number.isNaN(inputNumber);
-  const isValid = inputVerify === true;
-  if (isValid && input !== null) {
+    input = prompt('Введите число');
+  if (Number.isNaN(Number(input)) === true && input !== null) {
     alert('Было введено не число, попробуйте еще раз!');
     continue;
   }
-  if (input !== null && isValid === false) {
-  total = Number.parseInt(total) + inputNumber;
+  if (input !== null && Number.isNaN(Number(input)) === false) {
+  total = Number.parseInt(total) + Number(input);
  }
   if (input === null) {
-    inputNumber = 0;
-    total = Number.parseInt(total) + inputNumber;
+    input = 0;
+    total = Number.parseInt(total) + input;
     alert(`Общая сумма чисел равна ${total}`);
     break;
   }
