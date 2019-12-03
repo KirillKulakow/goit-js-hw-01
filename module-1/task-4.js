@@ -8,7 +8,7 @@ const pricePerDroid = 3000;
 
 let quantityDroid = Number(prompt('Какое количество дронов вы хотите купить?'));
 
-    if (Number.isNaN(quantityDroid) === true) {
+    if (Number.isNaN(quantityDroid)) {
         alert('Вы не ввели корректное число!');
     } else 
 

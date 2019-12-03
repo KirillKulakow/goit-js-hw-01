@@ -4,16 +4,16 @@ Task 6
 */
 
 let total = 0;
-let input = prompt('Введите число!');
-console.log(input);
+let input;
 
-while (input !== null) {
-  if (Number.isNaN(Number(input)) === false) {
-  total = total + Number(input);
+do 
+{
   input = prompt('Введите число!');
-} else if (Number.isNaN(Number(input)) === true) {
+  if (Number.isNaN(Number(input))) {
     alert(`Введите корректное число!`);
-    input = prompt('Введите число!');
+  } else {
+    total = total + Number(input);
   }
+} while (input !== null) {
 }
-alert(`Общая сумма чисел равна ${total}`)
+alert (`Общая сумма чисел равна ${total}`)
